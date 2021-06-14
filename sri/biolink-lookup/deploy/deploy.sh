@@ -1,6 +1,5 @@
 #!/bin/bash
 
-echo ${BUILD_VERSION}
 sed -i.bak \
     -e "s/DOCKER_IMAGE_VERSION/${BUILD_VERSION}/g" \
     values.yaml
